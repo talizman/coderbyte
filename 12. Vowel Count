@@ -1,0 +1,12 @@
+def VowelCount(str)
+  charArr = str.split("")
+  vCount = 0
+  charArr.each do |char|
+    vCount += 1 unless char.match(/[aeiou]/).nil?
+  end
+  return vCount
+end
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+VowelCount(STDIN.gets)  
