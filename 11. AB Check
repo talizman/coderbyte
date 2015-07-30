@@ -4,9 +4,7 @@ def ABCheck(str)
 
   charArr.each_with_index do |char, index|
     if char == "a" 
-      if charArr[index + 4] == "b"
-        return "true"
-      end
+      return "true" if charArr[index + 4] == "b"
     end
   end
   return "false"
