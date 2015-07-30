@@ -6,7 +6,7 @@ def ExOh(str)
     xCount += 1 if char == "x"
     oCount += 1 if char == "o"
   end
-  return xCount == oCount
+  xCount == oCount ? "true" : "false"
 end
    
 # keep this function call here 
