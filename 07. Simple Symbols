@@ -1,0 +1,22 @@
+def SimpleSymbols(str)
+  charArr = str.split("")
+  trVal = false
+  charArr.each_with_index do |char, index|
+    if char.match(/[a-zA-Z]/)
+      if index == 0 || index == charArr.length - 1
+        false
+        break
+      elsif charArr[index - 1] == "+" && charArr[index + 1] == "+"
+        trVal = true
+      else
+        false
+        break
+      end
+    end
+  end
+  return trVal
+end
+
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+SimpleSymbols(STDIN.gets)  
