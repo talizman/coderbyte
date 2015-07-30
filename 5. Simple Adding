@@ -1,0 +1,7 @@
+def SimpleAdding(num)
+  sum = 0
+  for n in 1..num
+    sum = sum + n
+  end
+  return sum
+end
