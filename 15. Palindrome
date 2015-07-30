@@ -1,0 +1,4 @@
+def Palindrome(str)
+  str = str.gsub(" ", "")
+  str == str.reverse ? true : false
+end
