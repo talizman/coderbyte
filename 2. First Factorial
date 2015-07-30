@@ -1,0 +1,7 @@
+def FirstFactorial(num)
+  fac = 1
+  for n in 1..num
+    fac = fac * n
+  end
+  return fac
+end
